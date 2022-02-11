@@ -3,4 +3,5 @@
 
 ## pytorch_pretraining_code.py
  pytorch를 이용하여 bert 모델을 pre-train하는 코드를 작성
- ... 
+ 
+ - :construction:
