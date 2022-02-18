@@ -13,4 +13,12 @@
  - TrainingArguments : train시킬때 필요한 parameter들 설정
  - get_collator : pytorch의 DataLoader라고 생각 Dataset객체를 수집하는데 이용
 
+## sentence_transformers_pretrain.py
+ pytorch를 이용한 SentenceTransformer 모델 학습
+ 
+ - corpus를 문장 단위로 split하여 저장한뒤 학습
+ - 기존 입력 문장을 noise를 통해 손상시킨뒤 디코더가 original한 문장을 생성하는지 여부를 통한 학습을 진행
+ - DenoisingAutoEncoderDataset : 기존 데이터에 noise를 포함시키는 데이터셋
+ - DenoisingAutoEncoderLoss : 손상된 문장을 통한 생성과 origin을 비교한 loss 계산
+ 
 # 코드 안의 주석으로 상세한 내용이 설명되어있음
